@@ -3,7 +3,7 @@
 """
 Created on Sun Aug 26 10:56:16 2018
 
-modified from the matplotlib-label-lines 
+modified from the matplotlib-label-lines
 https://pypi.org/project/matplotlib-label-lines/
 
 to plot inline labels from labeled polyline shapefiles to plot in basemap
@@ -63,7 +63,7 @@ def labelLine(line,x,label=None,align=True,**kwargs):
 
     if 'backgroundcolor' not in kwargs:
         kwargs['backgroundcolor'] = ax.get_facecolor()
- 
+
     if 'clip_on' not in kwargs:
         kwargs['clip_on'] = True
 
