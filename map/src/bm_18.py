@@ -13,7 +13,7 @@ import MySQLdb
 import osgeo.ogr
 
 #connect to the MySQL databse
-connection  =  MySQLdb.connect(host = 'localhost', user = "root", passwd = "iznogod01")
+connection  =  MySQLdb.connect(host = 'localhost', user = "your username", passwd = "your password")
 cursor = connection.cursor()
 
 #use the database

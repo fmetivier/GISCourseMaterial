@@ -15,7 +15,7 @@ import MySQLdb
 # name of the database you whish to connect to
 base = 'Parcours'
 # establish connection
-conn = MySQLdb.connect(host = "localhost", user = "root", passwd = "iznogod01", db = base)
+conn = MySQLdb.connect(host = "localhost", user = "your username", passwd = "your password", db = base)
 # create a curso object to send quaries
 cursor = conn.cursor()
 # write the SQL query
