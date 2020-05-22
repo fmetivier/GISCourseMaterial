@@ -5,9 +5,10 @@ Created on Mon May 18 09:16:23 2020
 
 @author: metivier
 
-folium maps 
+folium maps
 
-IPGP places in the world
+Exemple of map made of wms server layers
+here openstreet map is not the base layer 
 
 """
 import folium

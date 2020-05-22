@@ -8,7 +8,7 @@ Python-Mysql DDL exemples using the library pm3
 import pm_3
 
 #creates connection
-myconn = pm_3.create_connection(h = "localhost", u = "root", p = "root")
+myconn = pm_3.create_connection(h = "localhost", u = "your user name", p = "your password")
 
 #creates database
 pm_3.create_database(myconn,"Toto")

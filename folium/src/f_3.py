@@ -5,9 +5,12 @@ Created on Mon May 18 09:16:23 2020
 
 @author: metivier
 
-folium maps 
+folium maps
 
-IPGP places in the world
+Earthquakes of the last seven days plotted on top of three layers
+ASTER GDEM Shaded Relief
+Population density
+Open street map tiles
 
 """
 import folium
@@ -59,27 +62,27 @@ data = response.json()
 cmap = cm.get_cmap('coolwarm')
 
 
-#plot eartqhuakes as circles with individual popup info boxes.  
+#plot eartqhuakes as circles with individual popup info boxes.
 for f in data['features']:
     mag =  f['properties']['mag']
     coord = f['geometry']['coordinates']
     c=cmap(1-coord[2]/500.)
-    comment = "<p style = 'width:200px;'>"    
+    comment = "<p style = 'width:200px;'>"
 
-    edic = f['properties']    
+    edic = f['properties']
     comment += "<b>%s</b>: %s<br>" % ('Time',datetime.fromtimestamp(edic['time']/1000).strftime('%c'))
     comment += "<b>%s</b>: %s<br>" % ('Place', edic['place'])
     comment += "<b>%s</b>: %s<br>" % ('Magnitude', edic['mag'])
     comment += "<b>%s</b>: %s<br>" % ('Depth (km)', coord[2])
     comment += "<a href=%s>More Info</a><br>" % edic['url']
     comment += "</p>"
-    
+
     folium.CircleMarker(
         location=[coord[1],coord[0]],
         radius=5+2**(mag-1), #radius = f(mag)
         popup=comment ,
         color='black',
-        weight=1, # circle line width ! 
+        weight=1, # circle line width !
         fill=True,
         fill_color=rgb2hex(c)# color=f(depth)
     ).add_to(macarte)

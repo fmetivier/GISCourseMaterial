@@ -9,7 +9,7 @@ from sqlalchemy import create_engine
 import pandas
 
 # default syntax engine = create_engine('mysql://user:passwd@host/dbname')
-engine = create_engine('mysql://root:root@localhost/Parcelle')
+engine = create_engine('mysql://login:password@localhost/Parcelle')
 
 df = pandas.read_sql_table('imetos',engine)
 print(df.head())

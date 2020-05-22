@@ -11,9 +11,9 @@ from sqlalchemy import create_engine
 import pandas
 
 # default syntax engine = create_engine('mysql://user:passwd@host/dbname')
-engine = create_engine('mysql://root:iznogod01@localhost/Parcelle')
+engine = create_engine('mysql://login:password@localhost/Parcelle')
 
-sql="select round(winddir/20)*20 as theta, count(winddir) as radii from imetos group by round(winddir/20)*20 order by winddir" 
+sql="select round(winddir/20)*20 as theta, count(winddir) as radii from imetos group by round(winddir/20)*20 order by winddir"
 df = pandas.read_sql(sql,engine)
 
 # add the values of 0 and 360 degrees together, put the values at 360 to 0
@@ -31,5 +31,5 @@ for r,bar in zip(df['radii'].to_list(), bars):
     bar.set_facecolor("r")
     bar.set_edgecolor("k")
     bar.set_alpha(0.5)
- 
+
 py.show()

@@ -14,7 +14,7 @@ from sqlalchemy import create_engine
 import pandas
 
 # default syntax engine = create_engine('mysql://user:passwd@host/dbname')
-engine = create_engine('mysql://root:iznogod01@localhost/Parcelle')
+engine = create_engine('mysql://login:password@localhost/Parcelle')
 
 #get the data
 sql = "select hour(date) as h, avg(tairav) as ta from imetos  where month(date) in (7,8,9) group by hour(date)"

@@ -2,18 +2,18 @@
 """
 pm_4.py
 
-same as pm_2.py but the data retrieval uses the OpenDB class 
+same as pm_2.py but the data retrieval uses the OpenDB class
 """
 
 # import statements
-import MySQLdb # MySQL api 
+import MySQLdb # MySQL api
 from matplotlib.pylab import *
 from openDB import *
 
 
 #get the data
 #establish the connection
-o=OpenDB(base="Parcelle",host="localhost",user="root",passwd="root")
+o=OpenDB(base="Parcelle",host="localhost",user="your username",passwd="your password")
 #write and execute the query
 sql="select date(date), sum(precip)  from imetos group by date(date)"
 rows=o.execQuery(sql)
@@ -25,7 +25,7 @@ pr=[]
 for row in rows:
 	da.append(row[0])
 	pr.append(row[1])
-	
+
 # plot the results
 fig=figure(1)
 bar(da,pr)

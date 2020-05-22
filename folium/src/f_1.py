@@ -7,7 +7,7 @@ Created on Mon May 18 09:16:23 2020
 
 folium maps
 
-IPGP places in the world
+simple map with IPGP places in the world
 
 """
 import folium

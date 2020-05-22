@@ -11,9 +11,9 @@ import openDB as odb
 
 #get the data
 #establish the connection
-o = odb.OpenDB(base = "Parcelle", user = "root", passwd = "root", host = "localhost")
+o = odb.OpenDB(base = "Parcelle", user = "your username", passwd = "your password", host = "localhost")
 #write and execute the query
-sql = "select round(winddir/20)*20, count(winddir) from imetos group by round(winddir/20)*20 order by winddir" 
+sql = "select round(winddir/20)*20, count(winddir) from imetos group by round(winddir/20)*20 order by winddir"
 
 res = o.execQuery(sql)
 print(res)
@@ -26,7 +26,7 @@ for r in res:
 	else:
 		theta.append(float(r[0]))
 		radii.append(r[1])
-		
+
 #plot the result
 theta = py.array(theta)*py.pi/180.
 radii = py.array(radii)

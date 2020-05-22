@@ -12,12 +12,12 @@ from sqlalchemy import create_engine
 import pandas
 
 # default syntax engine = create_engine('mysql://user:passwd@host/dbname')
-engine = create_engine('mysql://root:iznogod01@localhost/Parcelle')
+engine = create_engine('mysql://login:password@localhost/Parcelle')
 
 sql = "select date(date) as d, sum(precip) as p  from imetos group by date(date)"
 df = pandas.read_sql(sql, engine)
 
-	
+
 # plot the results
 fig=py.figure(1)
 py.bar(df['d'], df['p'])

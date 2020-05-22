@@ -12,7 +12,7 @@ import openDB as odb
 
 #get the data
 #establish the connection
-o = odb.OpenDB(base = "Parcelle", user = "root", passwd = "root", host = "localhost")
+o = odb.OpenDB(base = "Parcelle", user = "your username", passwd = "your password", host = "localhost")
 #write and execute the query
 sql = "select hour(date), avg(tairav) from imetos  where month(date) in (7,8,9) group by hour(date)"
 res = py.array(o.execQuery(sql))

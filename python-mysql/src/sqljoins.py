@@ -1,7 +1,7 @@
 #!/usr/bin/env python2
 # -*- coding: utf-8 -*-
 """
-sqljoins.py 
+sqljoins.py
 
 Different types of SQL joins using shapely and matplotlib
 """

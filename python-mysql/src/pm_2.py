@@ -4,22 +4,22 @@ pm_2.py
  a simple Python script that
  1) connects to the Parcelle database
  2) queries the imetos table for daily precipitations
- 3) plots the retrieved data 
+ 3) plots the retrieved data
 """
 
 # import statements
-import MySQLdb # MySQL api 
+import MySQLdb # MySQL api
 import matplotlib.pylab as py
 
 
 # name of the database you whish to connect to
 base = 'Parcelle'
 # establish connection
-conn = MySQLdb.connect(host="localhost", user="root", passwd="root", db=base)
+conn = MySQLdb.connect(host="localhost", user="your user name", passwd="your password", db=base)
 # create a cursor object to send quaries
 cursor = conn.cursor()
 # write the SQL query
-query = 'select date(date), sum(precip) from imetos group by date(date)' 
+query = 'select date(date), sum(precip) from imetos group by date(date)'
 # execute the query
 cursor.execute(query)
 # fetch the dataset
@@ -32,7 +32,7 @@ pr = []
 for row in rows:
 	da.append(row[0])
 	pr.append(row[1])
-	
+
 # plot the results
 fig = py.figure(1)
 py.bar(da,pr)

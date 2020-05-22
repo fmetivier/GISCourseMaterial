@@ -10,7 +10,7 @@ import pandas
 import numpy as np
 
 # connect to the Toto db
-engine = create_engine('mysql://root:root@localhost/Toto')
+engine = create_engine('mysql://login:password@localhost/Toto')
 
 # create a dataframe with three series val1, val2 val3 of 100 000 values
 # val 1 in [0,10]
