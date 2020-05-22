@@ -8,9 +8,9 @@ import matplotlib.pylab as py
 import MySQLdb as msql
 
 # 1) Create connection
-conn = msql.connect(host="localhost", user="root", db="Parcours", passwd="root")
+conn = msql.connect(host="localhost", user="your user name", db="Parcours", passwd="your password")
 
-# 2) Create postman (cursor) 
+# 2) Create postman (cursor)
 postman = conn.cursor()
 
 # 3) write SQL GEI
@@ -25,7 +25,7 @@ res=py.array(postman.fetchall())
 # 6) Process
 anneeGEI=res.transpose()[0]
 inscritsGEI=res.transpose()[1]
-	
+
 # graphique
 fig=py.figure()
 py.bar(anneeGEI, inscritsGEI, color = 'lightgreen')

@@ -13,7 +13,7 @@ Created on Mon May 18 09:16:23 2020
 
 @author: metivier
 
-folium maps 
+folium maps
 
 using  Cluster Markers to plot the place where students where
 the year before registering at IPGP
@@ -30,7 +30,7 @@ import numpy as np
 #create the map
 macarte = folium.Map(location=[46.5,2.5], zoom_start=6)
 
-engine = create_engine("mysql://root:iznogod01@localhost/Parcours")
+engine = create_engine("mysql://login:password@localhost/Parcours")
 
 sql="select cp, prenom from IdentiteTbl i inner join ParcoursTbl p on i.idetudiant=p.idetudiant where annee=anneeufr-1 and pays='France'"
 
@@ -48,7 +48,7 @@ for l in lines:
     codep.append(d[2])
     lat.append(d[5])
     lon.append(d[6].strip('\n'))
-    
+
 data={'cp':codep, 'lat':lat, 'lon':lon}
 
 cp = pd.DataFrame(data,columns=['cp','lat','lon'])
@@ -61,7 +61,7 @@ mc = MarkerCluster()
 for index, row in merged.iterrows():
     mc.add_child(folium.Marker(location=[row['lat'],row['lon']],popup=row['prenom']))
 
-    
+
 macarte.add_child(mc)
 
 
