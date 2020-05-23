@@ -8,8 +8,13 @@ from sqlalchemy import create_engine
 # pandas
 import pandas
 
+#get your connection identifiers
+f=open('./identifiers.txt')
+mylogin=f.readline().strip('\n')
+mypass=f.readline().strip('\n')
+
 # default syntax engine = create_engine('mysql://user:passwd@host/dbname')
-engine = create_engine('mysql://login:password@localhost/Parcelle')
+engine = create_engine('mysql://%s:%s@localhost/Parcelle' % (mylogin,mypass))
 
 df = pandas.read_sql_table('imetos',engine)
 print(df.head())
@@ -17,7 +22,7 @@ print(df.head())
 
 print("Number of hours of precipitation")
 # select count(*) from imetos where precip > 0
-print df[df["precip"] > 0]["date"].count()
+print(df[df["precip"] > 0]["date"].count())
 
 
 print("Number of hours of precipitation during night time")

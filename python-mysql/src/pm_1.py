@@ -7,8 +7,12 @@ First Python-Mysql script
 import matplotlib.pylab as py
 import MySQLdb as msql
 
+f=open('./identifiers.txt')
+mylogin=f.readline().strip('\n')
+mypass=f.readline().strip('\n')
+
 # 1) Create connection
-conn = msql.connect(host="localhost", user="your user name", db="Parcours", passwd="your password")
+conn = msql.connect(host="localhost", user=mylogin, db="Parcours", passwd=mypass)
 
 # 2) Create postman (cursor)
 postman = conn.cursor()

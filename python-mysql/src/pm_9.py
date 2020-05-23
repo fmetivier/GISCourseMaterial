@@ -2,6 +2,7 @@
 pm_9.py
 
 use pandas to write pandas data to a MySQL table
+you need to have the database Toto created see pm_3_1.py and pm_3.py
 """
 #library needed to create a connection that pandas can use
 from sqlalchemy import create_engine
@@ -9,8 +10,13 @@ from sqlalchemy import create_engine
 import pandas
 import numpy as np
 
+#get your connection identifiers
+f=open('./identifiers.txt')
+mylogin=f.readline().strip('\n')
+mypass=f.readline().strip('\n')
+
 # connect to the Toto db
-engine = create_engine('mysql://login:password@localhost/Toto')
+engine = create_engine('mysql://%s:%s@localhost/Toto' % (mylogin,mypass))
 
 # create a dataframe with three series val1, val2 val3 of 100 000 values
 # val 1 in [0,10]

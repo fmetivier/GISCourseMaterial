@@ -7,15 +7,21 @@ pm_2.py
  3) plots the retrieved data
 """
 
+
 # import statements
 import MySQLdb # MySQL api
 import matplotlib.pylab as py
 
 
+#get your connection identifiers
+f=open('./identifiers.txt')
+mylogin=f.readline().strip('\n')
+mypass=f.readline().strip('\n')
+
 # name of the database you whish to connect to
 base = 'Parcelle'
 # establish connection
-conn = MySQLdb.connect(host="localhost", user="your user name", passwd="your password", db=base)
+conn = MySQLdb.connect(host="localhost", user=mylogin, passwd=mypass, db=base)
 # create a cursor object to send quaries
 cursor = conn.cursor()
 # write the SQL query

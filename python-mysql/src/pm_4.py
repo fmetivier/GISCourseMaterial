@@ -12,8 +12,13 @@ from openDB import *
 
 
 #get the data
+#get your connection identifiers
+f=open('./identifiers.txt')
+mylogin=f.readline().strip('\n')
+mypass=f.readline().strip('\n')
+
 #establish the connection
-o=OpenDB(base="Parcelle",host="localhost",user="your username",passwd="your password")
+o=OpenDB(base="Parcelle",host="localhost",user=mylogin,passwd=mypass)
 #write and execute the query
 sql="select date(date), sum(precip)  from imetos group by date(date)"
 rows=o.execQuery(sql)

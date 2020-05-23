@@ -8,7 +8,7 @@ plox xcos(x)
 import matplotlib.pylab as py
 
 #define the data
-x=py.linspace(0,10,100) 
+x=py.linspace(0,10,100)
 y=x*py.cos(x)
 
 #plot the result

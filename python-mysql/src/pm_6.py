@@ -10,8 +10,13 @@ import openDB as odb
 
 
 #get the data
+#get your connection identifiers
+f=open('./identifiers.txt')
+mylogin=f.readline().strip('\n')
+mypass=f.readline().strip('\n')
+
 #establish the connection
-o = odb.OpenDB(base = "Parcelle", user = "your username", passwd = "your password", host = "localhost")
+o = odb.OpenDB(base = "Parcelle", user = mylogin, passwd = mypass, host = "localhost")
 #write and execute the query
 sql = "select round(winddir/20)*20, count(winddir) from imetos group by round(winddir/20)*20 order by winddir"
 

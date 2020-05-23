@@ -6,15 +6,18 @@ same as pm_5.py but with SQLAlchemy and Pandas
 """
 
 #import libraries
-import matplotlib
-matplotlib.use('GTKAgg')
 
 import matplotlib.pylab as py
 from sqlalchemy import create_engine
 import pandas
 
+#get your connection identifiers
+f=open('./identifiers.txt')
+mylogin=f.readline().strip('\n')
+mypass=f.readline().strip('\n')
+
 # default syntax engine = create_engine('mysql://user:passwd@host/dbname')
-engine = create_engine('mysql://login:password@localhost/Parcelle')
+engine = create_engine('mysql://%s:%s@localhost/Parcelle' % (mylogin,mypass))
 
 #get the data
 sql = "select hour(date) as h, avg(tairav) as ta from imetos  where month(date) in (7,8,9) group by hour(date)"

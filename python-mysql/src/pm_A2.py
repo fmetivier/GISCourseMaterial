@@ -3,7 +3,7 @@
 pm_A2.py
 
 Solution of a steady 1D flow using Dupuit approximation over a length L
-for different values of hydraulic conductivity K 
+for different values of hydraulic conductivity K
 Boundary conditions are a flux  Q at 0 and zero depth y at 1.
 """
 # Import libraries
@@ -11,7 +11,7 @@ import matplotlib.pylab as py
 
 # Define the problem
 # constants
-L = 0.8 # "true" length 
+L = 0.8 # "true" length
 Q = 1./6000 # discharge m2/s
 K = [0.1, 0.075, 0.05, 0.025, 0.01] # hydraulic conductivity
 
