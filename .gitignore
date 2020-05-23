@@ -122,3 +122,4 @@ map/include/
 map/figures/
 folium/include/
 python-mysql/figures/
+python-mysql/src/identifiers.txt

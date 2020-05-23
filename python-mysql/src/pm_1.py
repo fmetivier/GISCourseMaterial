@@ -7,6 +7,7 @@ First Python-Mysql script
 import matplotlib.pylab as py
 import MySQLdb as msql
 
+#get your connection identifiers
 f=open('./identifiers.txt')
 mylogin=f.readline().strip('\n')
 mypass=f.readline().strip('\n')

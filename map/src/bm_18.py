@@ -12,8 +12,13 @@ and osgeo library
 import MySQLdb
 import osgeo.ogr
 
+#get your connection identifiers
+f=open('../../python-mysql/src/identifiers.txt')
+mylogin=f.readline().strip('\n')
+mypass=f.readline().strip('\n')
+
 #connect to the MySQL databse
-connection  =  MySQLdb.connect(host = 'localhost', user = "your username", passwd = "your password")
+connection  =  MySQLdb.connect(host = 'localhost', user = mylogin, passwd = mypass)
 cursor = connection.cursor()
 
 #use the database
@@ -39,7 +44,7 @@ cursor.execute("""create table departements (
 			""")
 
 #import the data from the departement shapefile
-shapefile = osgeo.ogr.Open("../include/shapefiles/DEPARTEMENTS/DEPARTEMENT.shp")
+shapefile = osgeo.ogr.Open("../include/shapefiles/DEPARTEMENTS/DEPARTEMENT.SHP")
 
 #get the Layer's attributes
 Layer = shapefile.GetLayer(0)
@@ -60,7 +65,7 @@ for featureNum in range(numFeatures):
 	f.GetField("NOM_CHF"), f.GetField("CODE_CHF"), f.GetField("ID_GEOFLA"), \
 	f.GetField("X_CENTROID"), f.GetField("Y_CENTROID"), \
 	f.GetField("X_CHF_LIEU"), f.GetField("Y_CHF_LIEU"), wkt))
-	print "departement: %s loaded in Parcours database\n" % f.GetField("NOM_DEPT")
+	print( "departement: %s loaded in Parcours database\n" % f.GetField("NOM_DEPT") )
 
 
 connection.commit()

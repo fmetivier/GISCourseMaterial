@@ -22,10 +22,14 @@ from matplotlib import cm
 import MySQLdb # msyql api
 
 #CONNEXION
+#get your connection identifiers
+f=open('../../python-mysql/src/identifiers.txt')
+mylogin=f.readline().strip('\n')
+mypass=f.readline().strip('\n')
 # name of the database you whish to connect to
 base = 'Parcours'
 # establish connection
-conn = MySQLdb.connect(host = "localhost", user = "your username", passwd = "your password", db = base)
+conn = MySQLdb.connect(host = "localhost", user = mylogin, passwd = mypass, db = base)
 # create a curso object to send quaries
 cursor = conn.cursor()
 # write the SQL query
