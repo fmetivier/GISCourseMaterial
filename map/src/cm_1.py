@@ -16,5 +16,5 @@ ax = fig.add_subplot(111, projection=ccrs.PlateCarree())
 #add coastlines
 ax.coastlines()
 
-
+plt.savefig('../figures/cm_1.pdf',bbox_inches='tight')
 plt.show()
