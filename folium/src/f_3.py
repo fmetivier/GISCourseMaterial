@@ -18,7 +18,6 @@ import requests
 
 import matplotlib.cm as cm
 from matplotlib.colors import rgb2hex
-
 from datetime import date, timedelta, datetime
 
 
