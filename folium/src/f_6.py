@@ -31,10 +31,9 @@ df = df.replace({'POP_EST' : 0}, 1) # replace 0 values
 df['POP_EST'] = np.log10(df['POP_EST']) # go to log10 scale
 
 #In the end plot
-folium.Choropleth(data,df,columns=['ISO_A3','POP_EST'],key_on='feature.properties.ISO_A3',\
+cp = folium.Choropleth(data,df,columns=['ISO_A3','POP_EST'],key_on='feature.properties.ISO_A3',\
     fill_color='PuRd',name='Population',legend_name='Populaton (log scale)').add_to(macarte)
 
-# GDP
 
 folium.LayerControl().add_to(macarte)
 macarte.save('f_6.html')
