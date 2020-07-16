@@ -52,7 +52,7 @@ et=today.strftime("%Y-%m-%d")
 st=startday.strftime("%Y-%m-%d")
 minmag='1'
 
-turl= "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=%s&endtime=%s&minmag=%s" % (st,et,minmag)
+turl = "https://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=%s&endtime=%s&minmag=%s" % (st,et,minmag)
 
 response = requests.get(turl)
 

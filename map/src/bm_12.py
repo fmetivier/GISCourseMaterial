@@ -51,4 +51,5 @@ plt.text(1.01*x, 1.01*y, 'Bordeaux', fontsize = 12, color = 'w')
 map.drawmeridians(range(-18, 18, 1), color = 'r', labels = [0, 0, 1, 1], fontsize = 14, zorder = 2)
 map.drawparallels(range(42, 47, 1), color = 'r', labels = [1, 1, 0, 0], fontsize = 14, zorder = 2)
 
+plt.savefig('../figures/bm_12.pdf',bbox_inches='tight')
 plt.show()

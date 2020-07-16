@@ -34,7 +34,7 @@ def big_style(x):
 
 macarte = folium.Map(location=[46.5,2.5], zoom_start=3)
 
-data, df = shape_to_geojson('../../map/include/shapefiles/ne_50m_admin_0_countries/ne_50m_admin_0_countries.shp')
+data, df = shape_to_geojson( '../../map/include/shapefiles/ne_50m_admin_0_countries/ne_50m_admin_0_countries.shp' )
 
 #add some information because it's  a mess to get the legend
 JsonLayer = folium.GeoJson(data,style_function=big_style,name='Population')

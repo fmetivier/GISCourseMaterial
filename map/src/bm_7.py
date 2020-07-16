@@ -37,4 +37,5 @@ print(tu)
 for a,b in zip(map.wc_info, map.wc):
 	print(a,b)
 
+plt.savefig('../figures/bm_7.pdf',bbox_inches='tight')
 plt.show()

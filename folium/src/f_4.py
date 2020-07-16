@@ -32,7 +32,7 @@ macarte = folium.Map(location=[46.5,2.5], zoom_start=6)
 
 engine = create_engine("mysql://login:password@localhost/Parcours")
 
-sql="select cp, prenom from IdentiteTbl i inner join ParcoursTbl p on i.idetudiant=p.idetudiant where annee=anneeufr-1 and pays='France'"
+sql = "select cp, prenom from IdentiteTbl i inner join ParcoursTbl p on i.idetudiant=p.idetudiant where annee=anneeufr-1 and pays='France'"
 
 stud = pd.read_sql(sql,engine)
 

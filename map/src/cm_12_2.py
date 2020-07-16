@@ -23,7 +23,8 @@ sys.path.append('/usr/bin/')
 import gdal_merge as gm
 
 
-fname = ["../include/raster/Guadeloupe/ASTGTM2_N16W062/ASTGTM2_N16W062_dem.tif","../include/raster/Guadeloupe/ASTGTM2_N15W062/ASTGTM2_N15W062_dem.tif"]
+fname = ["../include/raster/Guadeloupe/ASTGTM2_N16W062/ASTGTM2_N16W062_dem.tif",\
+"../include/raster/Guadeloupe/ASTGTM2_N15W062/ASTGTM2_N15W062_dem.tif"]
 
 fig = plt.figure(figsize = (20, 20))# because it is a raster the output size is important
 ax = fig.add_subplot(111, projection = ccrs.PlateCarree())
@@ -90,5 +91,5 @@ ax.coastlines(resolution='10m')
 ax.gridlines(draw_labels=True)
 ax.set_xlim(minx,maxx)
 ax.set_ylim(miny,maxy)
-plt.savefig("../figures/antillespdf", bbox_inches = "tight")
+# plt.savefig("../figures/antillespdf", bbox_inches = "tight")
 plt.show()

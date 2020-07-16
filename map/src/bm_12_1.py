@@ -18,7 +18,8 @@ import sys
 sys.path.append('/usr/bin/')
 import gdal_merge as gm
 
-ds  =  gdal.Open("../include/raster/Guadeloupe/ASTGTM2_N16W062/ASTGTM2_N16W062_dem.tif")
+# ds  =  gdal.Open("../include/raster/Guadeloupe/ASTGTM2_N16W062/ASTGTM2_N16W062_dem.tif")
+ds  =  gdal.Open('../include/raster/Guadeloupe/ASTGTM2_N15W062/ASTGTM2_N15W062_dem.tif')
 data  =  ds.ReadAsArray()
 
 
@@ -60,4 +61,5 @@ cb = map.colorbar(c)
 map.drawmeridians([-61, -61.5, -62], color = 'r', labels = [0, 0, 0, 1], fontsize = 14, zorder = 4)
 map.drawparallels([15, 15.5, 16], color = 'r', labels = [1, 0, 0, 0], fontsize = 14, zorder = 4)
 
+# plt.savefig('../figures/bm_12_2.pdf',bbox_inches='tight')
 plt.show()

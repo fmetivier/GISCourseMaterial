@@ -1,6 +1,6 @@
 """
 Download the earthquake catalogue of USGS
-get the M>=5 earthquakes of the last 30 days 
+get the M>=5 earthquakes of the last 30 days
 and plot them
 """
 
@@ -35,7 +35,7 @@ lat=[]
 lon=[]
 depth=[]
 mag=[]
-  
+
 for f in data['features']:
 	mag.append( f['properties']['mag'] )
 	coord = f['geometry']['coordinates']
@@ -44,7 +44,7 @@ for f in data['features']:
 	depth.append(coord[2])
 
 
-fig = plt.figure(figsize = (15, 7)) 
+fig = plt.figure(figsize = (15, 7))
 ax = fig.add_subplot(111, projection = ccrs.PlateCarree(central_longitude=180))
 ax.coastlines()
 ax.gridlines(xlocs=range(-180,181,60),ylocs=range(-90,91,30))
@@ -64,13 +64,13 @@ axins = inset_axes(ax,
                    bbox_transform=ax.transAxes,
                    borderpad=0,
                    )
-                   
+
 cbar = plt.colorbar(sc, cax=axins)
 cbar.set_label('Depth')
 
 
 #phantom plot
-for i in range(3): 
+for i in range(3):
     plt.scatter([],  [],  s = np.exp(i+5),  edgecolor = 'k', facecolor = 'none', label = str(i+5))
 
 #legend
@@ -79,6 +79,3 @@ ax.legend(h,  l, title = "Magnitude", labelspacing = 2, borderpad = 3, frameon =
 
 plt.savefig('../figures/cm_EQ30.pdf', bbox_inches='tight')
 plt.show()
-
-	
-	

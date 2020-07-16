@@ -110,4 +110,5 @@ plt.legend(handles = patches,  loc = 'lower left', \
  	title = 'Students')
 
 #END
+# plt.savefig('../figures/bm_15.pdf',bbox_inches='tight')
 plt.show()

@@ -55,6 +55,6 @@ for i in range(7):
 h,  l  =  plt.gca().get_legend_handles_labels()
 ax.legend(h,  l, title = "Magnitude", labelspacing = 2, borderpad = 2, frameon = True,  numpoints = 1,  ncol = 7,  framealpha = 0.9, bbox_to_anchor = (0.5, -0.1), loc = 'center')
 
-
+plt.savefig('../figures/Eqmont.pdf',bbox_inches='tight')
 # See the result
 plt.show()

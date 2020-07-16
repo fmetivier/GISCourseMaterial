@@ -79,6 +79,7 @@ def map_piezo():
 
 
     # Show
+    # plt.savefig('../figures/bm_16.pdf',bbox_inches='tight')
     plt.show()
 
 map_piezo()

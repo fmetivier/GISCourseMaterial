@@ -77,4 +77,5 @@ plt.legend(handles = patches,  loc = 'lower left',  title = 'World Population (2
 map.drawmeridians(range(-180, 180, 40), color = 'k', dashes = [4,  2],  labels = [0, 0, 1, 0], fontsize = 12, zorder = 1)
 map.drawparallels(range(-90, 90, 20), color = 'k', dashes = [4,  2],  labels = [1, 0, 0, 0], fontsize = 12, zorder = 1)
 
+plt.savefig('../figures/bm_8.pdf',bbox_inches='tight')
 plt.show()
