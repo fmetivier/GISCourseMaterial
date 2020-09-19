@@ -1,4 +1,4 @@
-#!/usr/bin/env python2
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
 cm_1.py
@@ -10,7 +10,7 @@ import cartopy.crs as ccrs
 import matplotlib.pyplot as plt
 
 fig  = plt.figure(figsize=(10/2.54,5/2.54))
-# the great interest with cartopy is its ability to be intergrated into the pyplot environnement
+# The great interest with cartopy is its ability to be intergrated into the pyplot environnement
 ax = fig.add_subplot(111, projection=ccrs.PlateCarree())
 
 #add coastlines

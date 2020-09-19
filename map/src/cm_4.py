@@ -1,4 +1,4 @@
-#!/usr/bin/env python2
+#!/usr/bin/env python 3
 # -*- coding: utf-8 -*-
 """
 cm_4.py
@@ -32,18 +32,18 @@ ax.gridlines(color = 'gray' ,linestyle = '-.', xlocs= range(-7,11,2) , ylocs = r
 
 
 # a work around for labels not really nice but it works
-ax.text(-4.1,42.1, '42°N', ha='center', transform = ccrs.Geodetic())
-ax.text(-4.3,44.1, '44°N', ha='center', transform = ccrs.Geodetic())
-ax.text(-4.8,46.1, '46°N', ha='center', transform = ccrs.Geodetic())
-ax.text(-5.3,48.1, '48°N', ha='center', transform = ccrs.Geodetic())
-ax.text(-5.6,50.1, '50°N', ha='center', transform = ccrs.Geodetic())
+ax.text(-4.1,42.1, '42N', ha='center', transform = ccrs.Geodetic())
+ax.text(-4.3,44.1, '44N', ha='center', transform = ccrs.Geodetic())
+ax.text(-4.8,46.1, '46N', ha='center', transform = ccrs.Geodetic())
+ax.text(-5.3,48.1, '48N', ha='center', transform = ccrs.Geodetic())
+ax.text(-5.6,50.1, '50N', ha='center', transform = ccrs.Geodetic())
 
-ax.text(-3,41.7, '3°W', ha='center', transform = ccrs.Geodetic())
-ax.text(-1,41.85, '1°W', ha='center', transform = ccrs.Geodetic())
-ax.text(1,42, '1°E', ha='center', transform = ccrs.Geodetic())
-ax.text(3,42.1, '3°E', ha='center', transform = ccrs.Geodetic())
-ax.text(5,42.2, '5°E', ha='center', transform = ccrs.Geodetic())
-ax.text(7,42.2, '7°E', ha='center', transform = ccrs.Geodetic())
+ax.text(-3,41.7, '3W', ha='center', transform = ccrs.Geodetic())
+ax.text(-1,41.85, '1W', ha='center', transform = ccrs.Geodetic())
+ax.text(1,42, '1E', ha='center', transform = ccrs.Geodetic())
+ax.text(3,42.1, '3E', ha='center', transform = ccrs.Geodetic())
+ax.text(5,42.2, '5E', ha='center', transform = ccrs.Geodetic())
+ax.text(7,42.2, '7E', ha='center', transform = ccrs.Geodetic())
 
 #more simple draw a scale bar!
 x1,y1 = (5,50)
