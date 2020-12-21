@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-bm_15.py
+cm_15.py
 
 Map the French départements with the result of a query performed in
 the MySQL Parcours database.
+
 
 cartopy version
 """
@@ -22,18 +23,25 @@ import cartopy.crs as ccrs
 import cartopy.io.shapereader as shpreader
 import cartopy.feature as cfeature
 
+
 import numpy as np
 
-import MySQLdb
+from sqlalchemy import create_engine
+
 
 #CONNEXION
 # name of the database you whish to connect to
 base = 'Parcours'
-# establish connection
-conn = MySQLdb.connect(host = "localhost", user = "your username", passwd = "your password", db = base)
-# create a curso object to send quaries
-cursor = conn.cursor()
-# write the SQL query
+# establish connection with sqlalchemy
+# a simple way to store login info
+f = open('./identifiers.txt')
+mylogin = f.readline().strip('\n')
+mypass = f.readline().strip('\n')
+
+engine = create_engine('mysql://%s:%s@localhost/Parcours' % (mylogin,mypass))
+conn = engine.connect()
+
+
 query = """select dep, count(*) as N from
         (select substr(cp,1,2) as dep
             from ParcoursTbl p inner join IdentiteTbl i on p.idetudiant=i.idetudiant
@@ -41,8 +49,7 @@ query = """select dep, count(*) as N from
         group by dep ;
     """
 # execute the query
-cursor.execute(query)
-# fetch the dataset
+rows = conn.execute(query)
 
 #DICTIONNARY AND LIST
 # We are going to create a dictionnary with the number of
@@ -50,7 +57,6 @@ cursor.execute(query)
 # and a list of keys
 OYB = {}
 keys = []
-rows  =  cursor.fetchall()
 for r in rows:
    OYB[r[0]] = float(r[1])
    keys.append(r[0])
