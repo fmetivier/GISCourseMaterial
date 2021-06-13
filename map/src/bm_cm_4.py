@@ -22,6 +22,7 @@ map.drawcoastlines()
 ax1=fig.add_subplot(122, projection = ccrs.TransverseMercator(central_longitude=2.5, central_latitude=46))
 ax1.set_extent((-5,9,42,52))
 ax1.coastlines()
+ax1.gridlines()
 
 plt.savefig('../figures/bm_cm_4.pdf',bbox_inches='tight')
 plt.show()

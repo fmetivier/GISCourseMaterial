@@ -39,7 +39,7 @@ def main():
 
 	layer = 'GPW_Population_Density_2020'
 	ax3.add_wmts(wmts,  layer)
-	
+
 	ax3.coastlines(resolution = '110m')
 	ax3.gridlines(draw_labels = True, xlocs = range(-180, 181, 60), ylocs = range(-90, 91, 30), color = 'k', linestyle = '-.')
 

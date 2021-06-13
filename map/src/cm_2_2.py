@@ -15,9 +15,9 @@ rcParams['font.size'] = 6
 
 fig = plt.figure(figsize=(16/2.54, 12/2.54))
 
+myproj = ccrs.PlateCarree()
 
-ax1 = fig.add_subplot(221, projection=ccrs.PlateCarree(
-                                    central_longitude=0))
+ax1 = fig.add_subplot(221, projection=myproj)
 
 ax1.coastlines(resolution='110m') # resolutions available 50m and 10m
 ax1.gridlines()
@@ -25,21 +25,18 @@ ax1.gridlines()
 # and tick overlaps use both xlocs and set_xticks same for y
 
 
-ax2 = fig.add_subplot(222, projection=ccrs.PlateCarree(
-                                    central_longitude=0))
+ax2 = fig.add_subplot(222, projection=myproj)
 ax2.coastlines(resolution='110m') # resolutions available 50m and 10m
 ax2.gridlines(draw_labels=True, xlocs = range(-180,181,40), ylocs = range(-90,91,30)) # problems of labels to be solved ...
 
-ax3 = fig.add_subplot(223, projection=ccrs.PlateCarree(
-                                    central_longitude=0))
+ax3 = fig.add_subplot(223, projection=myproj)
 ax3.coastlines(resolution='110m') # resolutions available 50m and 10m
 gl = ax3.gridlines(xlocs = range(-180,181,40), ylocs = range(-90,91,30)) # problems of labels to be solved ...
 gl.xlabels_bottom=True
 gl.ylabels_left = True
 
 
-ax4 = fig.add_subplot(224, projection=ccrs.PlateCarree(
-                                    central_longitude=0))
+ax4 = fig.add_subplot(224, projection=myproj)
 ax4.coastlines(resolution='110m') # resolutions available 50m and 10m
 gl2 = ax4.gridlines(xlocs = range(-180,181,40), ylocs = range(-90,91,30), color='darkblue', linestyle='--') # problems of labels to be solved ...
 ax4.set_xticks(range(-180,181,40), crs=ccrs.PlateCarree(central_longitude=0))
