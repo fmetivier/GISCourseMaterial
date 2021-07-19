@@ -1,14 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Created on Wed May 20 15:21:19 2020
-
-@author: metivier
-"""
-
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
 Created on Mon May 18 09:16:23 2020
 
 @author: metivier
@@ -63,8 +55,6 @@ for index, row in merged.iterrows():
 
 
 macarte.add_child(mc)
-
-
 
 
 macarte.save('f_4.html')
