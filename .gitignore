@@ -102,6 +102,9 @@ ENV/
 #sqlite db
 .db
 
+#html
+.html
+
 # Rope project settings
 .ropeproject
 
@@ -118,6 +121,8 @@ ENV/
 .vrt
 
 #directories
+Data/
+figures/
 map/include/
 map/figures/
 folium/include/

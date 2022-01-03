@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_9122c0504fda471687ccc6e1ff178640 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_9122c0504fda471687ccc6e1ff178640" ></div>
+        
+</body>
+<script>    
+    
+            var map_9122c0504fda471687ccc6e1ff178640 = L.map(
+                "map_9122c0504fda471687ccc6e1ff178640",
+                {
+                    center: [25.0, 2.4],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 3,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_ca52af2f672d4773bd71a706b841283e = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_9122c0504fda471687ccc6e1ff178640);
+        
+    
+            var marker_c8bedfd4a331460391b3e63ea3895ca1 = L.marker(
+                [48.845366, 2.358222],
+                {}
+            ).addTo(map_9122c0504fda471687ccc6e1ff178640);
+        
+    
+        var popup_9e65e3f03a82425f9cc145a9d716161e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_39866bbcc3ce4ddaa23b6f4c2d67921e = $(`<div id="html_39866bbcc3ce4ddaa23b6f4c2d67921e" style="width: 100.0%; height: 100.0%;"><img src='../../Data/folium/images/cuvier.jpg' width='200px' /> <b>Institut de Physique du globe de Paris</b> <br>Main Cuvier Campus</div>`)[0];
+            popup_9e65e3f03a82425f9cc145a9d716161e.setContent(html_39866bbcc3ce4ddaa23b6f4c2d67921e);
+        
+
+        marker_c8bedfd4a331460391b3e63ea3895ca1.bindPopup(popup_9e65e3f03a82425f9cc145a9d716161e)
+        ;
+
+        
+    
+    
+            var marker_e1be54e4565443f3b90995d26c516406 = L.marker(
+                [48.827624, 2.38033],
+                {}
+            ).addTo(map_9122c0504fda471687ccc6e1ff178640);
+        
+    
+        var popup_5a0d1d174ac3453f82afe7d3e54dfaa3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a01b305c1cb0409caac3a3704d9a696d = $(`<div id="html_a01b305c1cb0409caac3a3704d9a696d" style="width: 100.0%; height: 100.0%;"><img src='../../Data/folium/images/lamarckA.jpg' width='200px' /> <img src='..../Data/folium/images/lamarckB.jpg' width='200px' /><b>Institut de Physique du globe de Paris</b><br>UP Campus</div>`)[0];
+            popup_5a0d1d174ac3453f82afe7d3e54dfaa3.setContent(html_a01b305c1cb0409caac3a3704d9a696d);
+        
+
+        marker_e1be54e4565443f3b90995d26c516406.bindPopup(popup_5a0d1d174ac3453f82afe7d3e54dfaa3)
+        ;
+
+        
+    
+    
+            var marker_53cb3b9617d549f9bb264395bbf8fab1 = L.marker(
+                [15.979679, -61.702719],
+                {}
+            ).addTo(map_9122c0504fda471687ccc6e1ff178640);
+        
+    
+        var popup_212534405363494e8d047da805d373bb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3407721c620c425fa217dbaf180cd718 = $(`<div id="html_3407721c620c425fa217dbaf180cd718" style="width: 100.0%; height: 100.0%;"><img src='../../Data/folium/images/ovsg.jpg' width='200px' /> <b>Institut de Physique du globe de Paris</b> <br>Guadeloupe Observatory</div>`)[0];
+            popup_212534405363494e8d047da805d373bb.setContent(html_3407721c620c425fa217dbaf180cd718);
+        
+
+        marker_53cb3b9617d549f9bb264395bbf8fab1.bindPopup(popup_212534405363494e8d047da805d373bb)
+        ;
+
+        
+    
+    
+            var marker_4c4f978f2d7c448cab78cbd93a720ced = L.marker(
+                [14.734571, -61.159924],
+                {}
+            ).addTo(map_9122c0504fda471687ccc6e1ff178640);
+        
+    
+        var popup_9c2aef69a389465a9913f9d99e98ba6b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d96440aacfe44a98bca1cbcca3e0b5c6 = $(`<div id="html_d96440aacfe44a98bca1cbcca3e0b5c6" style="width: 100.0%; height: 100.0%;"><img src='../../Data/folium/images/ovsm.jpg' width='200px' /> <b>Institut de Physique du globe de Paris</b> <br>Martinique Observatory</div>`)[0];
+            popup_9c2aef69a389465a9913f9d99e98ba6b.setContent(html_d96440aacfe44a98bca1cbcca3e0b5c6);
+        
+
+        marker_4c4f978f2d7c448cab78cbd93a720ced.bindPopup(popup_9c2aef69a389465a9913f9d99e98ba6b)
+        ;
+
+        
+    
+    
+            var marker_fe38504ef0d94a4098704dde5695a4f0 = L.marker(
+                [-21.208519, 55.571905],
+                {}
+            ).addTo(map_9122c0504fda471687ccc6e1ff178640);
+        
+    
+        var popup_7cb27b3b97424b9790c1d81c8ed46cf2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1e8a8eb33afe4f7c8b0db0dde003fb30 = $(`<div id="html_1e8a8eb33afe4f7c8b0db0dde003fb30" style="width: 100.0%; height: 100.0%;"><img src='../../Data/folium/images/piton.jpg' width='200px' /> <b>Institut de Physique du globe de Paris</b> <br>La Réunion Observatory</div>`)[0];
+            popup_7cb27b3b97424b9790c1d81c8ed46cf2.setContent(html_1e8a8eb33afe4f7c8b0db0dde003fb30);
+        
+
+        marker_fe38504ef0d94a4098704dde5695a4f0.bindPopup(popup_7cb27b3b97424b9790c1d81c8ed46cf2)
+        ;
+
+        
+    
+    
+            var marker_4514c5840ae342beaff63fe726fe85e3 = L.marker(
+                [48.025666, 2.260932],
+                {}
+            ).addTo(map_9122c0504fda471687ccc6e1ff178640);
+        
+    
+        var popup_072e091cbce1430f81f51742d720b6f6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_953253c770bb41b4bfc272b9e600e6b8 = $(`<div id="html_953253c770bb41b4bfc272b9e600e6b8" style="width: 100.0%; height: 100.0%;"><img src='../../Data/folium/images/chambon.jpg' width='200px' /> <b>Institut de Physique du globe de Paris</b> <br>Chambon le forêt Observatory</div>`)[0];
+            popup_072e091cbce1430f81f51742d720b6f6.setContent(html_953253c770bb41b4bfc272b9e600e6b8);
+        
+
+        marker_4514c5840ae342beaff63fe726fe85e3.bindPopup(popup_072e091cbce1430f81f51742d720b6f6)
+        ;
+
+        
+    
+</script>
