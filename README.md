@@ -77,15 +77,15 @@ Scripts to produce interactive webmaps (Part II chapter 14) using the folium lib
 
 | Script| Purpose |
 |----|---|
-|<a target="_blank" href="./folium/src/f_1.py">f_1.py</a>| Location of IPGP's sites as markers on an OSM map|
-|<a target="_blank" href="./folium/src/f_2.py">f_2.py </a>| Exemple of maps made of wms server layers |
-|<a target="_blank" href="./folium/src/f_3.py">f_3.py </a>| Earthquakes of the last seven days plotted on top of two wms layers and the OSM basemap|
-|<a target="_blank" href="./folium/src/f_4.py">f_4.py </a>| Cluster Markers to plot places visited by students |
-|<a target="_blank" href="./folium/src/f_5.py">f_5.py</a>| Transform GeoJson polygons and add information Popups |
-|<a target="_blank" href="./folium/src/f_6.py">f_6.py</a> | Plot Choropleth from a shapefile |
-|<a target="_blank" href="./folium/src/f_7.py">f_7.py</a>| Plot Northern atlantic Hurricanes trajectories |
-|<a target="_blank" href="./folium/src/f_8.py">f_8.py</a> | Plot Groundwater piezometric map of the Landes sand aquifer on top of OSM basemap |
-|<a target="_blank" href="./folium/src/ShapeTransform.py">ShapeTransform.py </a>| library to tranform a  shapefile geometry into a geojson dic and a pandas dataframe |
+|<a target="_blank" href="./src/folium/f_1.py">f_1.py</a>| Location of IPGP's sites as markers on an OSM map|
+|<a target="_blank" href="./src/folium/f_2.py">f_2.py </a>| Exemple of maps made of wms server layers |
+|<a target="_blank" href="./src/folium/f_3.py">f_3.py </a>| Earthquakes of the last seven days plotted on top of two wms layers and the OSM basemap|
+|<a target="_blank" href="./src/folium/f_4.py">f_4.py </a>| Cluster Markers to plot places visited by students |
+|<a target="_blank" href="./src/folium/f_5.py">f_5.py</a>| Transform GeoJson polygons and add information Popups |
+|<a target="_blank" href="./src/folium/f_6.py">f_6.py</a> | Plot Choropleth from a shapefile |
+|<a target="_blank" href="./src/folium/f_7.py">f_7.py</a>| Plot Northern atlantic Hurricanes trajectories |
+|<a target="_blank" href="./src/folium/f_8.py">f_8.py</a> | Plot Groundwater piezometric map of the Landes sand aquifer on top of OSM basemap |
+|<a target="_blank" href="./src/folium/ShapeTransform.py">ShapeTransform.py </a>| library to tranform a  shapefile geometry into a geojson dic and a pandas dataframe |
 
 
 
@@ -113,27 +113,27 @@ The purpose here is to be able to share scripts without sharing login informatio
 
 | Script| Purpose |
 |----|---|
-|<a target="_blank" href="./python-mysql/src/openDB.py">openDB.py</a> | Class OpenDB library: simple wrapper to connect and execute SQL queries (DDL and DML). Saves time :=) |
-|<a target="_blank" href="./python-mysql/src/pm_1.py">pm_1.py</a> | Query and plot the number of registered students|
-|<a target="_blank" href="./python-mysql/src/pm_2.py">pm_2.py</a>, <a target="_blank" href="./python-mysql/src/pm_4.py">pm4_py</a>, <a target="_blank" href="./python-mysql/src/pm_4p.py">pm_4p.py</a> | Query the imetos database and plot the daily rainfall. The three scripts use three different ways to query the database |
-|<a target="_blank" href="./python-mysql/src/pm_3.py">pm_3.py</a> & <a target="_blank" href="./python-mysql/src/pm_3_1.py">pm_3_1.py</a>| sample Data Definition Language (DDL) scripts|
-|<a target="_blank" href="./python-mysql/src/pm_5.py">pm_5.py</a> | Plot of the hourly temperatures  averaged over july,August and september |
-|<a target="_blank" href="./python-mysql/src/pm_6.py">pm_6.py</a> | Plot the histogram of wind directions as a polar plot.|
-|<a target="_blank" href="./python-mysql/src/pm_7.py">pm_7.py</a>, <a target="_blank" href="./python-mysql/src/pm_7_2.py">pm_7_2.py</a> & <a target="_blank" href="./python-mysql/src/pm_8.py">pm_8.py</a>| use pandas to connect to a mysql/MariaDB server |
-|<a target="_blank" href="./python-mysql/src/pm_9.py">pm_9.py </a>| Use pandas to write data to an SQL server |
-| <a target="_blank" href="./python-mysql/src/sqla_1.py">sqla_1.py </a>| Ways to connect to a mysql/mariadb server using sqlalchemy and different connectors |
-|<a target="_blank" href="./python-mysql/src/sqljoins.py">sqljoins.py </a>| Plot of different types of SQL joins |
+|<a target="_blank" href="./src/python-mysql/openDB.py">openDB.py</a> | Class OpenDB library: simple wrapper to connect and execute SQL queries (DDL and DML). Saves time :=) |
+|<a target="_blank" href="./src/python-mysql/pm_1.py">pm_1.py</a> | Query and plot the number of registered students|
+|<a target="_blank" href="./src/python-mysql/pm_2.py">pm_2.py</a>, <a target="_blank" href="./src/python-mysql/pm_4.py">pm4_py</a>, <a target="_blank" href="./src/python-mysql/pm_4p.py">pm_4p.py</a> | Query the imetos database and plot the daily rainfall. The three scripts use three different ways to query the database |
+|<a target="_blank" href="./src/python-mysql/pm_3.py">pm_3.py</a> & <a target="_blank" href="./src/python-mysql/pm_3_1.py">pm_3_1.py</a>| sample Data Definition Language (DDL) scripts|
+|<a target="_blank" href="./src/python-mysql/pm_5.py">pm_5.py</a> | Plot of the hourly temperatures  averaged over july,August and september |
+|<a target="_blank" href="./src/python-mysql/pm_6.py">pm_6.py</a> | Plot the histogram of wind directions as a polar plot.|
+|<a target="_blank" href="./src/python-mysql/pm_7.py">pm_7.py</a>, <a target="_blank" href="./src/python-mysql/pm_7_2.py">pm_7_2.py</a> & <a target="_blank" href="./src/python-mysql/pm_8.py">pm_8.py</a>| use pandas to connect to a mysql/MariaDB server |
+|<a target="_blank" href="./src/python-mysql/pm_9.py">pm_9.py </a>| Use pandas to write data to an SQL server |
+| <a target="_blank" href="./src/python-mysql/sqla_1.py">sqla_1.py </a>| Ways to connect to a mysql/mariadb server using sqlalchemy and different connectors |
+|<a target="_blank" href="./src/python-mysql/sqljoins.py">sqljoins.py </a>| Plot of different types of SQL joins |
 
 Several scripts are also given  to help students with graphics before going into maps
 
 | Script| Purpose |
 |----|---|
-|<a target="_blank" href="./python-mysql/src/pm_A1.py">pm_A1.py</a> | Plot xcos(x) |
-|<a target="_blank" href="./python-mysql/src/pm_A2.py">pm_A2.py</a> | Plot Solution of a steady 1D flow using Dupuit approximation over a length L for different values of hydraulic conductivity K Boundary conditions are a flux  Q at 0 and zero depth y at 1.|
-|<a target="_blank" href="./python-mysql/src/pm_A3.py">pm_A3.py</a> & <a target="_blank" href="./python-mysql/src/pm_A3_1.py">pm_A3_1.py</a> |Using axes in matplotlib pyplot figures |
-|<a target="_blank" href="./python-mysql/src/pm_A4.py">pm_A4.py</a> | Drawing circles, using patches and collections |
-|<a target="_blank" href="./python-mysql/src/pm_A5.py">pm_A5.py </a>| Different ways to build a legend |
-|<a target="_blank" href="./python-mysql/src/replace_X.py">replace_X.py</a> | Replacing ticks|
+|<a target="_blank" href="./src/python-mysql/pm_A1.py">pm_A1.py</a> | Plot xcos(x) |
+|<a target="_blank" href="./src/python-mysql/pm_A2.py">pm_A2.py</a> | Plot Solution of a steady 1D flow using Dupuit approximation over a length L for different values of hydraulic conductivity K Boundary conditions are a flux  Q at 0 and zero depth y at 1.|
+|<a target="_blank" href="./src/python-mysql/pm_A3.py">pm_A3.py</a> & <a target="_blank" href="./src/python-mysql/pm_A3_1.py">pm_A3_1.py</a> |Using axes in matplotlib pyplot figures |
+|<a target="_blank" href="./src/python-mysql/pm_A4.py">pm_A4.py</a> | Drawing circles, using patches and collections |
+|<a target="_blank" href="./src/python-mysql/pm_A5.py">pm_A5.py </a>| Different ways to build a legend |
+|<a target="_blank" href="./src/python-mysql/replace_X.py">replace_X.py</a> | Replacing ticks|
 
 
 ### map directory
