@@ -38,7 +38,7 @@ The python libraries needed to run all the scripts include
 
 if you use python environments like anaconda or use the library managers of linux, the dependencies should be resolved by themselves upon installation of the main libraries (namely cartopy, mysqldb, sqlalchemy and pandas/geopandas).
 
-The scripts have been tested on computers running under  linux (Debian), windows, and various versions of MacOS.
+The scripts have been tested on computers running under  linux (Debian), Windows, and various versions of MacOS.
 
 The links inside the scripts are referenced with regard to the script so
 you need to reconstruct the working directory. Because Github is not a data repository you have to proceed in two steps
@@ -65,11 +65,8 @@ you need to reconstruct the working directory. Because Github is not a data repo
 
 ## Content of the src folder
 
-Each directory in the src folder corresponds to certain types  python scripts discussed in the different chapters of the course.
+Each directory in the src folder corresponds to certain types  python scripts discussed in the different chapters of the course. Below is a list of scripts and their purpose.
 
-With the exception of the sql directory, each directory is organised in three directories
-
-The src directory contains all the source codes, the include directory contains all the data needed to execute the scripts, the figures directory shows some results.
 
 ### folium directory
 
