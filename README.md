@@ -145,27 +145,27 @@ Scripts and datasets used to show how python can be used to draw nice maps (Part
 
 | Scripts | Description |
 |----|---|
-|<a target="_blank" href="./src/map/cm_1.py> cm_1.py </a> |  Simple map taken from cartopy tutorial |
-|<a target="_blank" href="./src/map/cm_1_2.py>cm_1_2.py </a>& <a target="_blank" href="./src/map/cm_1_3.py>cm_1_3.py </a>| keywords : projection vs transform |
-|<a target="_blank" href="./src/map/cm_2.py>cm_2.py </a>| Change projection, add gridlines |
-|<a target="_blank" href="./src/map/cm_4.py>cm_4.py </a>& <a target="_blank" href="./src/map/cm__4_1.py>cm_4_1.py</a>| Add labels |
-|<a target="_blank" href="./src/map/cm_5.py>cm_5.py </a>| Draw points and great circle |
-|<a target="_blank" href="./src/map/cm_5_backgrounds.py>cm_5_backgrounds.py</a>, <a target="_blank" href="./src/map/cm_5_backgrounds_vec.py>cm_5_backgrounds_vec.py </a>& <a target="_blank" href="./src/map/cm_5_background_img.py>cm_5_background_img.py </a>| Backgrounds from NaturalEarth and images |
-|<a target="_blank" href="./src/map/cm_5_EQ.py>cm_5_EQ.py</a> | Earthquake map |
-|<a target="_blank" href="./src/map/cm_5_SVZ.py>cm_5_SVZ.py </a>| Magnetic map |
-|<a target="_blank" href="./src/map/bm_6.py>bm_6.py </a>| Read shapefiles using the osgeo library |
-|<a target="_blank" href="./src/map/cm_7.py>cm_7.py </a>| Read shapefile with cartopy |
-|<a target="_blank" href="./src/map/cm_8.py>cm_8.py</a> | Fill polygns with colours |
-|<a target="_blank" href="./src/map/bm_9.py>bm_9.py </a>| Convert shapefile using geopandas (not specific to bm)|
-|<a target="_blank" href="./src/map/bm_10.py>bm_10.py</a> | Write data to a shapefile (not specific to bm) |
-|<a target="_blank" href="./src/map/bm_11.py>bm_11.py </a>| Get information from a georefenced image (not specific to bm) |
-|<a target="_blank" href="./src/map/cm_12.py>cm_12.py </a>|Plot a georeferenced jpeg image of Aquitaine with Bordeaux |
-|<a target="_blank" href="./src/map/cm_12_2.py>cm_12_2.py </a>| Plot a georeferenced DEM using merging and cropping |
-|<a target="_blank" href="./src/map/bm_13.py>bm_13.py </a>| Open Raster bands from a Geotiff Landsat 5 image; Extract and plot the histograms |
-|<a target="_blank" href="./src/map/cm_14.py>cm_14.py </a>& <a target="_blank" href="./src/map/bm_14.py>bm_14.py</a>| Stretch, merge and reproject GeoTiff images. The case of the Bayanbulak grassland in Tianshan. |
-|<a target="_blank" href="./src/map/cm_15.py>cm_15.py</a>, <a target="_blank" href="./src/map/cm_15bis.py>cm_15bis.py</a>, <a target="_blank" href="./src/map/bm_15.py>bm_15.py </a>& <a target="_blank" href="./src/map/bm_15bis.py>bm_15bis.py</a>| Plot a choropleth of the french departements together with some query over the Parcours database |
-|<a target="_blank" href="./src/map/cm_16.py>cm_16.py </a>& <a target="_blank" href="./src/map/bm_16.py>bm_16.py </a>|Draw equipotential (isopieze map) lines of the Plio-quaternary aquifer on top of a Landast ETM view of the Lakes of Landes south of Arcachon. The ETM image comes from the earthdata web service |
-|<a target="_blank" href="./src/map/bm_18.py>bm_18.py</a> |Create the DEPARTEMENT Table  and populate it using the GEOFLA shapefile and osgeo library |
+|<a target="_blank" href="./src/map/cm_1.py"> cm_1.py </a> |  Simple map taken from cartopy tutorial |
+|<a target="_blank" href="./src/map/cm_1_2.py">cm_1_2.py </a>& <a target="_blank" href="./src/map/cm_1_3.py">cm_1_3.py </a>| keywords : projection vs transform |
+|<a target="_blank" href="./src/map/cm_2.py">cm_2.py </a>| Change projection, add gridlines |
+|<a target="_blank" href="./src/map/cm_4.py">cm_4.py </a>& <a target="_blank" href="./src/map/cm__4_1.py">cm_4_1.py</a>| Add labels |
+|<a target="_blank" href="./src/map/cm_5.py">cm_5.py </a>| Draw points and great circle |
+|<a target="_blank" href="./src/map/cm_5_backgrounds.py">cm_5_backgrounds.py</a>, <a target="_blank" href="./src/map/cm_5_backgrounds_vec.py">cm_5_backgrounds_vec.py </a>& <a target="_blank" href="./src/map/cm_5_background_img.py">cm_5_background_img.py </a>| Backgrounds from NaturalEarth and images |
+|<a target="_blank" href="./src/map/cm_5_EQ.py">cm_5_EQ.py</a> | Earthquake map |
+|<a target="_blank" href="./src/map/cm_5_SVZ.py">cm_5_SVZ.py </a>| Magnetic map |
+|<a target="_blank" href="./src/map/bm_6.py">bm_6.py </a>| Read shapefiles using the osgeo library |
+|<a target="_blank" href="./src/map/cm_7.py">cm_7.py </a>| Read shapefile with cartopy |
+|<a target="_blank" href="./src/map/cm_8.py">cm_8.py</a> | Fill polygns with colours |
+|<a target="_blank" href="./src/map/bm_9.py">bm_9.py </a>| Convert shapefile using geopandas (not specific to bm)|
+|<a target="_blank" href="./src/map/bm_10.py">bm_10.py</a> | Write data to a shapefile (not specific to bm) |
+|<a target="_blank" href="./src/map/bm_11.py">bm_11.py </a>| Get information from a georefenced image (not specific to bm) |
+|<a target="_blank" href="./src/map/cm_12.py">cm_12.py </a>|Plot a georeferenced jpeg image of Aquitaine with Bordeaux |
+|<a target="_blank" href="./src/map/cm_12_2.py">cm_12_2.py </a>| Plot a georeferenced DEM using merging and cropping |
+|<a target="_blank" href="./src/map/bm_13.py">bm_13.py </a>| Open Raster bands from a Geotiff Landsat 5 image; Extract and plot the histograms |
+|<a target="_blank" href="./src/map/cm_14.py">cm_14.py </a>& <a target="_blank" href="./src/map/bm_14.py">bm_14.py</a>| Stretch, merge and reproject GeoTiff images. The case of the Bayanbulak grassland in Tianshan. |
+|<a target="_blank" href="./src/map/cm_15.py">cm_15.py</a>, <a target="_blank" href="./src/map/cm_15bis.py">cm_15bis.py</a>, <a target="_blank" href="./src/map/bm_15.py">bm_15.py </a>& <a target="_blank" href="./src/map/bm_15bis.py">bm_15bis.py</a>| Plot a choropleth of the french departements together with some query over the Parcours database |
+|<a target="_blank" href="./src/map/cm_16.py">cm_16.py </a>& <a target="_blank" href="./src/map/bm_16.py">bm_16.py </a>|Draw equipotential (isopieze map) lines of the Plio-quaternary aquifer on top of a Landast ETM view of the Lakes of Landes south of Arcachon. The ETM image comes from the earthdata web service |
+|<a target="_blank" href="./src/map/bm_18.py">bm_18.py</a> |Create the DEPARTEMENT Table  and populate it using the GEOFLA shapefile and osgeo library |
 
 
 ## sql databases
