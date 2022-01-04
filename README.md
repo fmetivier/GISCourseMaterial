@@ -45,7 +45,7 @@ you need to reconstruct the working directory. Because Github is not a data repo
 
   * Clone the root directory wherever you want.
 
-  * Then download the datasets used in the scripts from http://morpho.ipgp.fr/metivier/public/include/Data/GISCoursMaterialData.zip
+  * Then download the datasets used in the scripts from http://morpho.ipgp.fr/metivier/public/include/Data/GISCourseMaterialData.zip
    and place them in the Data folder of the root directory so that the overall architecture is the following
 
   ```
