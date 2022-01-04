@@ -120,6 +120,10 @@ ENV/
 .xml
 .vrt
 
+# compressed
+.zip
+
+
 #directories
 Data/
 figures/

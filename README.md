@@ -1,4 +1,4 @@
-# GIS Course: datasets and sample scripts
+# GIS Course: sample scripts
 
 * [Introduction](##introduction)
 * [Requirements and Installation](##requirements-and-installation)
@@ -17,7 +17,7 @@ The python files enclosed include the scripts discussed in the following undergr
 
 *Bases de données et cartographie en Sciences de la terre avec MariaDB (MySQL) et Python L3-Terre & Environnement*, given at Institut de Physique du Globe de Paris by François Métivier
 
-The course (only in French for now) can be freely downloaded on [HAL] as a pdf (https://cel.archives-ouvertes.fr/cel-01877606v1).
+The course (only in French for now) can be freely downloaded on [HAL] as a pdf (https://cel.archives-ouvertes.fr/cel-01877606v3).
 
 Its present version concentrates on the cartopy library that has become the *de facto* standard for maps in python. Yet for those who still use basemap  scripts are given for most of the programs and previous versions of the course are also available on HAL.
 
@@ -41,40 +41,27 @@ if you use python environments like anaconda or use the library managers of linu
 The scripts have been tested on computers running under  linux (Debian), windows, and various versions of MacOS.
 
 The links inside the scripts are referenced with regard to the script so
-
-1 If you only want the scripts :
+you need to reconstruct the working directory. Because Github is not a data repository you have to proceed in two steps
 
   * Clone the root directory wherever you want.
 
-2 if you want the scripts and datasets you need to reconstruct the working directory
+  * Then download the datasets used in the scripts from http://morpho.ipgp.fr/metivier/public/include/Data/GISCoursMaterialData.zip
+   and place them in the Data folder of the root directory so that the overall architecture is the following
 
-```
-GISCourseMaterial
-  ./Data
-    ./folium
-      ./data
-      ./images
-    ./map
-      ./raster
+  ```
+  ./GISCourseMaterial:
+    ./Data
+      ./folium
         ...
-      ./shapefiles
+      ./map
         ...
-      ./txt
-    ./sql
-  ./src
-    ./folium
-    ./python-mysql
-    ./map
-
-```
-Because Github is not a data repository you have to proceed by
-
-  * Cloning the root directory wherever you want.
-
-  *Then downloading the datasets used in the scripts at http://morpho.ipgp.fr/metivier/Data and place them in the Data folder of the root directory so that the overall architecture is the following
-
-You can also download a full version at http://morpho.ipgp.fr/metivier/Data
-
+      ./sql
+        ...
+    ./src
+      ./folium
+      ./map
+      ./python-mysql   
+  ```
 
 ## Content of the src folder
 
