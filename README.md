@@ -162,6 +162,7 @@ Scripts and datasets used to show how python can be used to draw nice maps (Part
 |<a target="_blank" href="./src/map/cm_14.py">cm_14.py </a>& <a target="_blank" href="./src/map/bm_14.py">bm_14.py</a>| Stretch, merge and reproject GeoTiff images. The case of the Bayanbulak grassland in Tianshan. |
 |<a target="_blank" href="./src/map/cm_15.py">cm_15.py</a>, <a target="_blank" href="./src/map/cm_15bis.py">cm_15bis.py</a>, <a target="_blank" href="./src/map/bm_15.py">bm_15.py </a>& <a target="_blank" href="./src/map/bm_15bis.py">bm_15bis.py</a>| Plot a choropleth of the french departements together with some query over the Parcours database |
 |<a target="_blank" href="./src/map/cm_16.py">cm_16.py </a>& <a target="_blank" href="./src/map/bm_16.py">bm_16.py </a>|Draw equipotential (isopieze map) lines of the Plio-quaternary aquifer on top of a Landast ETM view of the Lakes of Landes south of Arcachon. The ETM image comes from the earthdata web service |
+|<a target="_blank" href="./src/map/cm_17.py">cm_17.py</a>| Read piezometric shapefile, regrid equipotentials, calculate streamlines, and plot on top of a Landsat mosaic from gibbs web map tile service|
 |<a target="_blank" href="./src/map/bm_18.py">bm_18.py</a> |Create the DEPARTEMENT Table  and populate it using the GEOFLA shapefile and osgeo library |
 
 
