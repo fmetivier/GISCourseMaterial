@@ -142,5 +142,5 @@ ax.text(
 x, y = (-1.184541, 44.668606)
 ax.text(x, y, "Bassin d'Arcachon", color="w", transform=plot_CRS)
 
-# plt.savefig("../figures/cm_shp2grid.pdf",bbox_inches='tight')
+plt.savefig("/home/metivier/Nextcloud/cours/GISCourseMaterial/figures/cm_17_shp2grid.svg",bbox_inches='tight')
 plt.show()
