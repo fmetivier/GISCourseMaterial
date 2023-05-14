@@ -82,6 +82,7 @@ Scripts to produce interactive webmaps (Part II chapter 14) using the folium lib
 |<a target="_blank" href="./src/folium/f_6.py">f_6.py</a> | Plot Choropleth from a shapefile |
 |<a target="_blank" href="./src/folium/f_7.py">f_7.py</a>| Plot Northern atlantic Hurricanes trajectories |
 |<a target="_blank" href="./src/folium/f_8.py">f_8.py</a> | Plot Groundwater piezometric map of the Landes sand aquifer on top of OSM basemap |
+|<a target="_blank" href="./src/folium/f_9.py">f_9.py</a> | Plot location of a series of pictures on top of OSM basemap with link to the image|
 |<a target="_blank" href="./src/folium/ShapeTransform.py">ShapeTransform.py </a>| library to tranform a  shapefile geometry into a geojson dic and a pandas dataframe |
 
 
